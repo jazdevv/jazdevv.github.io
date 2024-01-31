@@ -2,8 +2,8 @@
     --main-color: #00ff4c;
     --secundary-color: #006816;
     --border-hard-color: #e4e4e4;
-    --font-medium-size:0.8rem;
-    --font-lg-size: 0.95rem;
+    --font-medium-size: 0.9rem;
+    --font-lg-size: 1.1rem;
 }
 
 * {
@@ -18,24 +18,23 @@
     background: linear-gradient(to right, var(--secundary-color), var(--main-color));
     padding: 8px 12px;
     color: white;
-    font-size: var(--font-lg-size);
+    font-size: var(--font-medium-size);
     font-weight: bold;
 }
 
 .navbar {
     border-bottom: 1px var(--border-hard-color) solid;
-    font-weight: 700;
-    font-size: var(--font-medium-size);
+    font-size: var(--font-lg-size);
 }
 
 .navbar ul{
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 25px;
     list-style-type: none;
-    padding: 10px 15px;
-    gap: 15px;
+    padding: 20px 0px;
 }
+
 
 .navbar ul li a {
     text-decoration: none;
@@ -45,4 +44,27 @@
 .navbar ul li a:hover {
     text-decoration: none;
     color: var(--secundary-color);
+}
+
+/* navbar hover */
+
+.navbar li {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.border-hover {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px; 
+    background-color: var(--secundary-color);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar li:hover .border-hover {
+    width: 100%;
 }
