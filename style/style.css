@@ -1,13 +1,13 @@
 :root {
     --main-color: #00ff4c;
-    --secundary-color: #006816;
+    --secundary-color: #00831c;
     --border-hard-color: #e4e4e4;
     --font-medium-size: 0.9rem;
     --font-lg-size: 1.1rem;
     --font-2xl-size: 2rem;
     --font-3xl-size: 3rem;
     --text-color-white: #e4e4e4;
-    --globalnav-bg-color: #1a1a1a; 
+    --globalnav-bg-color: #1a1a1a;
     --globalnav-text-color: #e4e4e4;
     --globalnav-background: rgba(22, 22, 23, .8);
 }
@@ -24,6 +24,9 @@ body {
 
 main {
     transform: translateY(-70px);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .top-header {
@@ -34,6 +37,35 @@ main {
     color: white;
     font-size: var(--font-medium-size);
     font-weight: bold;
+}
+
+/* rehusable clases */
+.dark-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg,
+            rgba(0, 0, 0, 0.2) 0%,
+            rgba(0, 0, 0, 0.6) 100%),
+        linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+    z-index: 2;
+}
+
+.image-banner {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.image-banner content {
+
+}
+
+.image-banner .image img{
+    width: 100%;
 }
 
 /* navbar */
@@ -48,7 +80,7 @@ main {
     z-index: 100;
 }
 
-.navbar ul{
+.navbar ul {
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -81,7 +113,7 @@ main {
     left: 50%;
     transform: translateX(-50%);
     width: 0;
-    height: 2px; 
+    height: 2px;
     background-color: var(--globalnav-text-color);
     transition: width 0.3s ease, left 0.3s ease;
 }
@@ -109,7 +141,7 @@ main {
     z-index: 5;
 }
 
-.home-portada-content span{
+.home-portada-content span {
     font-size: var(--font-3xl-size);
     font-weight: 800;
     text-transform: capitalize;
@@ -135,22 +167,6 @@ main {
     height: 85vh;
 }
 
-.home-portada-video::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(
-    180deg, 
-    rgba(0,0,0,0.2) 0%,
-    rgba(0,0,0,0.6) 100%
-    ),
-    linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
-    z-index: 2;
-}
-
 /* home map */
 
 .home-map {
@@ -158,15 +174,22 @@ main {
     padding: 25px 25px;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 5px;
 }
 
-.home-map span {
+.home-map .title {
     font-size: var(--font-2xl-size);
     font-weight: 800;
 }
 
-#map { 
+.home-map .pre-title {
+    font-size: var(--font-lg-size);
+    color: var(--secundary-color);
+    font-weight: 800;
+}
+
+#map {
+    margin-top: 25px;
     width: 70%;
-    height: 500px; 
+    height: 500px;
 }
