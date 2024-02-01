@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PLANTREE</title>
     <link rel="stylesheet" type="text/css" href="./style/style.css">
     <script src="js/renderNavbar.js" defer></script>
+    <script src="js/homeMap.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
 </head>
+
 <body>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <header class="top-header">IMPROVING THE EARTH!</header>
     <nav class="navbar" id="navbar">
-       
+        <!--  TEMPLATE RENDER -->
     </nav>
-    <main class="main">
-
+    <main>
+        <article class="home-portada">
+            <div class="home-portada-content">
+                <span>A Green World Is a Better World</span>
+            </div>
+            <div class="home-portada-video">
+                <!-- <video width="100%" autoplay loop>
+                    <source src="https://streamable.com/on2eoa" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>  -->
+                <div style="position:relative; width:100%; height:0px; padding-bottom:56.250%"><iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/on2eoa?autoplay=1&muted=1&nocontrols=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>
+            </div>
+           
+        </article>   
+        <div class="home-map">
+            <span>OUR CAMPAIGNS</span>
+            <div id="map"></div>
+        </div>
     </main>
 </body>
+
 </html>
