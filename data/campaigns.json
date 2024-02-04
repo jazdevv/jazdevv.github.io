@@ -1,0 +1,364 @@
+{
+    "campaigns": [
+        {
+            "id": 1,
+            "name": "Campaign 1",
+            "continent": "OC",
+            "description": "Tree planting campaign in SA",
+            "image": "image_url_1",
+            "stadistics": {
+                "amountPlantedTrees": 906,
+                "personsContributted": 173,
+                "monthsDuration": 8
+            },
+            "geoCoordinates": [
+                69.3557,
+                14.8341
+            ],
+            "roadMap": [
+                {
+                    "month": 1,
+                    "description": "Initial planning and preparation for Campaign 1"
+                },
+                {
+                    "month": 3,
+                    "description": "Mid-phase review and adjustment for Campaign 1"
+                },
+                {
+                    "month": 8,
+                    "description": "Final assessment and community engagement for Campaign 1"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Campaign 2",
+            "continent": "SA",
+            "description": "Tree planting campaign in EU",
+            "image": "image_url_2",
+            "stadistics": {
+                "amountPlantedTrees": 1835,
+                "personsContributted": 82,
+                "monthsDuration": 8
+            },
+            "geoCoordinates": [
+                35.9791,
+                12.6557
+            ],
+            "roadMap": [
+                {
+                    "month": 1,
+                    "description": "Initial planning and preparation for Campaign 2"
+                },
+                {
+                    "month": 3,
+                    "description": "Mid-phase review and adjustment for Campaign 2"
+                },
+                {
+                    "month": 8,
+                    "description": "Final assessment and community engagement for Campaign 2"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Reforesting the Pyrenees",
+            "continent": "EU",
+            "description": "Plant native trees in degraded areas of the Pyrenees mountain range.",
+            "image": "https://example.com/pyrenees_reforestation.jpg",
+            "stadistics": {
+                "amountPlantedTrees": 5000,
+                "personsContributted": 200,
+                "monthsDuration": 18
+            },
+            "geoCoordinates": [
+                42.3086,
+                1.8244
+            ],
+            "roadMap": [
+                {
+                    "month": 1,
+                    "description": "Site selection and community outreach."
+                },
+                {
+                    "month": 3,
+                    "description": "Nursery preparation and seedling production."
+                },
+                {
+                    "month": 8,
+                    "description": "Planting events and volunteer engagement."
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Clean Coast Catalonia",
+            "continent": "EU",
+            "description": "Organize beach cleanups and raise awareness about marine pollution.",
+            "image": "https://example.com/clean_coast_catalonia.jpg",
+            "stadistics": {
+                "amountPlantedTrees": 0,
+                "personsContributted": 500,
+                "monthsDuration": 12
+            },
+            "geoCoordinates": [
+                41.3887,
+                2.1709
+            ],
+            "roadMap": [
+                {
+                    "month": 2,
+                    "description": "Partner with local organizations and municipalities."
+                },
+                {
+                    "month": 4,
+                    "description": "Organize monthly beach cleanup events."
+                },
+                {
+                    "month": 10,
+                    "description": "Educational workshops and awareness campaigns."
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Butterfly Gardens in Schools",
+            "continent": "EU",
+            "description": "Create butterfly gardens in schoolyards to promote biodiversity and education.",
+            "image": "https://example.com/butterfly_gardens_schools.jpg",
+            "stadistics": {
+                "amountPlantedTrees": 200,
+                "personsContributted": 150,
+                "monthsDuration": 6
+            },
+            "geoCoordinates": [
+                41.4028,
+                2.1714
+            ],
+            "roadMap": [
+                {
+                    "month": 3,
+                    "description": "Design and planning workshops with students."
+                },
+                {
+                    "month": 4,
+                    "description": "Planting native wildflowers and creating butterfly habitats."
+                },
+                {
+                    "month": 5,
+                    "description": "Monitoring and educational activities with students."
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Urban Agriculture in Community Gardens",
+            "continent": "SA",
+            "description": "Empower communities to grow fresh produce in unused urban spaces.",
+            "image": "https://example.com/urban_agriculture.jpg",
+            "stadistics": {
+                "amountPlantedTrees": 150,
+                "personsContributted": 300,
+                "monthsDuration": 12
+            },
+            "geoCoordinates": [
+                -34.6034,
+                -58.3773
+            ],
+            "roadMap": [
+                {
+                    "month": 1,
+                    "description": "Secure funding and identify suitable locations."
+                },
+                {
+                    "month": 3,
+                    "description": "Build garden beds and install irrigation systems."
+                },
+                {
+                    "month": 5,
+                    "description": "Organize workshops on sustainable gardening techniques."
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Mangrove Restoration in Southeast Asia",
+            "continent": "AS",
+            "description": "Protect coastal ecosystems and communities by restoring mangrove forests.",
+            "image": "https://example.com/mangrove_restoration.jpg",
+            "stadistics": {
+                "amountPlantedTrees": 10000,
+                "personsContributted": 400,
+                "monthsDuration": 24
+            },
+            "geoCoordinates": [
+                -3.2809,
+                114.8411
+            ],
+            "roadMap": [
+                {
+                    "month": 1,
+                    "description": "Community outreach and awareness campaigns."
+                },
+                {
+                    "month": 4,
+                    "description": "Nursery preparation and seedling propagation."
+                },
+                {
+                    "month": 8,
+                    "description": "Large-scale mangrove planting events with volunteers."
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Renewable Energy Microgrids in Rural Africa",
+            "continent": "AF",
+            "description": "Provide access to clean electricity and empower communities through renewable energy microgrids.",
+            "image": "https://example.com/renewable_energy_africa.jpg",
+            "stadistics": {
+                "amountPlantedTrees": 0,
+                "personsContributted": 500,
+                "monthsDuration": 18
+            },
+            "geoCoordinates": [
+                0.2326,
+                32.4508
+            ],
+            "roadMap": [
+                {
+                    "month": 2,
+                    "description": "Identify suitable communities and assess energy needs."
+                },
+                {
+                    "month": 6,
+                    "description": "Secure funding and partner with local organizations."
+                },
+                {
+                    "month": 10,
+                    "description": "Install solar panels, batteries, and microgrid infrastructure."
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Bee Hives on Urban Roofs",
+            "continent": "EU",
+            "description": "Install and maintain beehives on urban rooftops to promote biodiversity and local honey production.",
+            "image": "https://example.com/beehives_urban_roofs.jpg",
+            "stadistics": {
+                "amountPlantedTrees": 50,
+                "personsContributted": 100,
+                "monthsDuration": 12
+            },
+            "geoCoordinates": [
+                51.5074,
+                -0.1278
+            ],
+            "roadMap": [
+                {
+                    "month": 1,
+                    "description": "Secure partnerships with building owners and beekeepers."
+                },
+                {
+                    "month": 3,
+                    "description": "Install beehives, equipment, and access points."
+                },
+                {
+                    "month": 6,
+                    "description": "Organize educational workshops and honey harvesting events."
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Community Composting Initiative",
+            "continent": "NA",
+            "description": "Reduce waste and create nutrient-rich compost through community composting programs.",
+            "image": "https://example.com/community_composting.jpg",
+            "stadistics": {
+                "amountPlantedTrees": 0,
+                "personsContributted": 250,
+                "monthsDuration": 9
+            },
+            "geoCoordinates": [
+                40.7128,
+                -74.0060
+            ],
+            "roadMap": [
+                {
+                    "month": 2,
+                    "description": "Organize workshops and awareness campaigns on composting benefits."
+                },
+                {
+                    "month": 4,
+                    "description": "Partner with local organizations and establish collection infrastructure."
+                },
+                {
+                    "month": 7,
+                    "description": "Monitor progress, refine the program, and celebrate achievements."
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Healthy Food Access for Children",
+            "continent": "NA",
+            "description": "Provide fresh, nutritious food to children in underserved communities through school gardens and mobile markets.",
+            "image": "https://example.com/healthy_food_children.jpg",
+            "stadistics": {
+                "amountPlantedTrees": 200,
+                "personsContributted": 300,
+                "monthsDuration": 15
+            },
+            "geoCoordinates": [
+                37.7749,
+                -122.4194
+            ],
+            "roadMap": [
+                {
+                    "month": 1,
+                    "description": "Partner with schools and community organizations."
+                },
+                {
+                    "month": 4,
+                    "description": "Build and maintain school gardens with student involvement."
+                },
+                {
+                    "month": 8,
+                    "description": "Launch mobile markets and distribute fresh produce to families."
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Amazon Rainforest Conservation",
+            "continent": "SA",
+            "description": "Protect the biodiversity and indigenous communities of the Amazon rainforest through sustainable forest management and education.",
+            "image": "https://example.com/amazon_rainforest.jpg",
+            "stadistics": {
+                "amountPlantedTrees": 5000,
+                "personsContributted": 400,
+                "monthsDuration": 24
+            },
+            "geoCoordinates": [
+                -3.3971,
+                -60.0248
+            ],
+            "roadMap": [
+                {
+                    "month": 1,
+                    "description": "Raise awareness and funding for rainforest conservation efforts."
+                },
+                {
+                    "month": 6,
+                    "description": "Support sustainable livelihoods for indigenous communities."
+                },
+                {
+                    "month": 12,
+                    "description": "Partner with local organizations to protect forests and combat deforestation."
+                }
+            ]
+        }
+    ]
+}
