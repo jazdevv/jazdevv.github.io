@@ -2,7 +2,7 @@
     "campaigns": [
         {
             "id": 1,
-            "name": "Campaign 1",
+            "name": "Forest Guardians",
             "continent": "OC",
             "description": "Tree planting campaign in SA",
             "image": "image_url_1",
@@ -27,36 +27,6 @@
                 {
                     "month": 8,
                     "description": "Final assessment and community engagement for Campaign 1"
-                }
-            ]
-        },
-        {
-            "id": 2,
-            "name": "Campaign 2",
-            "continent": "SA",
-            "description": "Tree planting campaign in EU",
-            "image": "image_url_2",
-            "stadistics": {
-                "amountPlantedTrees": 1835,
-                "personsContributted": 82,
-                "monthsDuration": 8
-            },
-            "geoCoordinates": [
-                35.9791,
-                12.6557
-            ],
-            "roadMap": [
-                {
-                    "month": 1,
-                    "description": "Initial planning and preparation for Campaign 2"
-                },
-                {
-                    "month": 3,
-                    "description": "Mid-phase review and adjustment for Campaign 2"
-                },
-                {
-                    "month": 8,
-                    "description": "Final assessment and community engagement for Campaign 2"
                 }
             ]
         },
