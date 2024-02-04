@@ -82,7 +82,7 @@ main {
     text-transform: uppercase;
 }
 
-.image-banner .image-banner-image img{
+.image-banner .image-banner-image img {
     width: 100%;
 }
 
@@ -96,15 +96,15 @@ main {
     color: var(--text-color-white);
 }
 
-.btn-1{
+.btn-1 {
     cursor: pointer;
     padding: 20px 30px;
     border: 3px var(--text-color-white) solid;
     transition: 0.3s;
-    
+
 }
 
-.btn-1:hover{
+.btn-1:hover {
     background-color: var(--text-color-white);
     transition: 0.3s;
     color: var(--text-color-black)
@@ -112,61 +112,61 @@ main {
 
 /* rehusable timeline */
 .timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: var(--secundary-color);
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: var(--secundary-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
 }
 
 
 .timeline .container {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
 }
 
 .timeline .container::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: var(--secundary-color);
-  border: 4px solid var(--border-black);
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: var(--secundary-color);
+    border: 4px solid var(--border-black);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
 }
 
 .timeline .left {
-  left: 0;
+    left: 0;
 }
 
 .timeline .right {
-  left: 50%;
+    left: 50%;
 }
 
 .timeline .right::after {
-  left: -16px;
+    left: -16px;
 }
 
 .timeline .content {
-  padding: 20px 30px;
-  color: var(--text-color-white);
-  background-color: var(--bg-gray-color);
-  position: relative;
-  border-radius: 6px;
+    padding: 20px 30px;
+    color: var(--text-color-white);
+    background-color: var(--bg-gray-color);
+    position: relative;
+    border-radius: 6px;
 }
 
 .timeline b {
@@ -187,7 +187,7 @@ main {
     padding: 20px 20vw;
 }
 
-.navbar-wrapper{
+.navbar-wrapper {
     display: flex;
     align-items: center;
     position: relative;
@@ -213,15 +213,16 @@ main {
     color: var(--globalnav-text-color);
 }
 
-.navbar-logo{
+.navbar-logo {
     cursor: pointer;
     left: 0px;
     position: absolute;
 }
 
-.navbar-logo img{
+.navbar-logo img {
     width: 70px;
 }
+
 /* navbar hover */
 
 .navbar li {
@@ -246,7 +247,7 @@ main {
 }
 
 /* home */
-main.home{
+main.home {
     transform: translateY(-70px);
 }
 
@@ -324,3 +325,51 @@ main.home{
     height: 600px;
 }
 
+/* campaigns page */
+.block-filter {
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.block-filter>h1 {
+    width: fit-content;
+    font-weight: 600;
+}
+
+.filter-continent-container {
+    display: flex;
+    gap: 10px;
+}
+
+.continent-container {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.continent-container h3 {
+    position: absolute;
+    font-size: var(--font-2xl-size);
+    color: var(--text-color-white);
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.continent-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.continent-container:hover img {
+    transform: scale(1.2);
+}
