@@ -1,6 +1,7 @@
 :root {
     --main-color: #00ff4c;
     --secundary-color: #17a736;
+    --contrast-color: #16a4bb;
     --border-hard-color: #e4e4e4;
     --font-medium-size: 0.9rem;
     --font-lg-size: 1.1rem;
@@ -8,6 +9,9 @@
     --font-3xl-size: 3rem;
     --text-color-white: #e4e4e4;
     --text-color-black: #1a1a1a;
+    --bg-white-color: #e4e4e4;
+    --bg-gray-color: #6b6b6b;
+    --border-black: #1a1a1a;
     --globalnav-bg-color: #1a1a1a;
     --globalnav-text-color: #e4e4e4;
     --globalnav-background: rgba(22, 22, 23, .8);
@@ -17,6 +21,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 body {
@@ -24,7 +29,6 @@ body {
 }
 
 main {
-    transform: translateY(-70px);
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -57,7 +61,7 @@ main {
 
 .image-banner {
     position: relative;
-    height: 400px;
+    height: 250px;
     overflow: hidden;
 }
 
@@ -106,6 +110,69 @@ main {
     color: var(--text-color-black)
 }
 
+/* rehusable timeline */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: var(--secundary-color);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+
+.timeline .container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.timeline .container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: var(--secundary-color);
+  border: 4px solid var(--border-black);
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline .left {
+  left: 0;
+}
+
+.timeline .right {
+  left: 50%;
+}
+
+.timeline .right::after {
+  left: -16px;
+}
+
+.timeline .content {
+  padding: 20px 30px;
+  color: var(--text-color-white);
+  background-color: var(--bg-gray-color);
+  position: relative;
+  border-radius: 6px;
+}
+
+.timeline b {
+    color: var(--text-color-black);
+}
+
 
 /* navbar */
 
@@ -117,6 +184,15 @@ main {
     position: -webkit-sticky;
     background-color: var(--globalnav-background);
     z-index: 100;
+    padding: 20px 20vw;
+}
+
+.navbar-wrapper{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    width: 100%;
 }
 
 .navbar ul {
@@ -124,7 +200,6 @@ main {
     justify-content: center;
     gap: 25px;
     list-style-type: none;
-    padding: 20px 0px;
 }
 
 
@@ -138,6 +213,15 @@ main {
     color: var(--globalnav-text-color);
 }
 
+.navbar-logo{
+    cursor: pointer;
+    left: 0px;
+    position: absolute;
+}
+
+.navbar-logo img{
+    width: 70px;
+}
 /* navbar hover */
 
 .navbar li {
@@ -162,6 +246,9 @@ main {
 }
 
 /* home */
+main.home{
+    transform: translateY(-70px);
+}
 
 .home-portada {
     width: 100%;
@@ -236,3 +323,4 @@ main {
 #block-image-banner-home {
     height: 600px;
 }
+
