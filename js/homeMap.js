@@ -1,10 +1,3 @@
-async function getCampaigns() {
-    const campaignsJsonUnparsed = await fetch('../data/campaigns.json')
-    const campaignsJson = await campaignsJsonUnparsed.json()
-    
-    return campaignsJson;
-}
-
 async function loadMap() {
     var map = L.map('map', {
         center: [51.505, -0.09],
@@ -19,9 +12,8 @@ async function loadMap() {
     }).addTo(map);
 
     //render campaigns
-    const campaigns = await getCampaigns()
-
-    campaigns.campaigns.map( (campaign ) => {
+    const campaigns = await CampaignsUtils.getCampaigns();
+    campaigns.map( (campaign ) => {
         const marker = L.marker(campaign.geoCoordinates, {
             title: campaign.name
         }).addTo(map); 

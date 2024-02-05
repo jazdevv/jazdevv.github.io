@@ -9,6 +9,8 @@
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="./style/style.css">
     <script src="js/renderNavbar.js" defer></script>
+    <script src="js/utils.js" defer></script>
+    <script src="js/campaignsFunctionality.js" defer></script>
 </head>
 
 <body>
@@ -17,45 +19,51 @@
         <!--  TEMPLATE RENDER -->
     </nav>
     <main class="main">
-        <div class="block-filter">
-            <h1>MULTIPLE CONTINENTS</h1>
-            <div class="filter-continent-container">
-                <div class="continent-container dark-container" data-continent="ALL">
-                    <h3>ALL</h3>
-                    <img src="images/continents/all.jpeg" />
-                </div>
+        <div class="container-main">
+            <div class="block-filter">
+                <h1>MULTIPLE CONTINENTS</h1>
+                <div class="filter-continent-container" id="filter-continent-container">
+                    <div class="continent-container dark-container" data-continent="ALL">
+                        <h3>ALL</h3>
+                        <img src="images/continents/all.jpeg" />
+                    </div>
 
-                <div class="continent-container dark-container" data-continent="SA">
-                    <h3>SOUTH AMERICA</h3>
-                    <img src="images/continents/south-america.jpg" />
-                </div>
+                    <div class="continent-container dark-container" data-continent="SA">
+                        <h3>SOUTH AMERICA</h3>
+                        <img src="images/continents/south-america.jpg" />
+                    </div>
 
-                <div class="continent-container dark-container" data-continent="NA">
-                    <h3>NORTH AMERICA</h3>
-                    <img src="images/continents/north-america.jpg" />
-                </div>
+                    <div class="continent-container dark-container" data-continent="NA">
+                        <h3>NORTH AMERICA</h3>
+                        <img src="images/continents/north-america.jpg" />
+                    </div>
 
-                <div class="continent-container dark-container" data-continent="AF">
-                    <h3>AFRICA</h3>
-                    <img src="images/continents/africa.jpg" />
-                </div>
+                    <div class="continent-container dark-container" data-continent="AF">
+                        <h3>AFRICA</h3>
+                        <img src="images/continents/africa.jpg" />
+                    </div>
 
-                <div class="continent-container dark-container" data-continent="OC">
-                    <h3>OCEANIA</h3>
-                    <img src="images/continents/oceania.jpg" />
-                </div>
+                    <div class="continent-container dark-container" data-continent="OC">
+                        <h3>OCEANIA</h3>
+                        <img src="images/continents/oceania.jpg" />
+                    </div>
 
-                <div class="continent-container dark-container" data-continent="AS">
-                    <h3>ASIA</h3>
-                    <img src="images/continents/asia.jpeg" />
-                </div>
+                    <div class="continent-container dark-container" data-continent="AS">
+                        <h3>ASIA</h3>
+                        <img src="images/continents/asia.jpeg" />
+                    </div>
 
-                <div class="continent-container dark-container" data-continent="EU">
-                    <h3>EUROPE</h3>
-                    <img src="images/continents/europe.jpeg" />
+                    <div class="continent-container dark-container" data-continent="EU">
+                        <h3>EUROPE</h3>
+                        <img src="images/continents/europe.jpeg" />
+                    </div>
                 </div>
             </div>
+            <div id="campaigns">
+               
+            </div>
         </div>
+
 
     </main>
 </body>
