@@ -15,6 +15,8 @@ class CampaignsUtilsClass {
         } else {
             const campaigns = await this.getCampaigns();
             const continentCampaigns = [];
+
+            // filter by continent
             campaigns.map((campaign) => {
                 if (campaign.continent == continent) {
                     continentCampaigns.push(campaign)
@@ -32,18 +34,20 @@ class CampaignsUtilsClass {
         for (let campaign of campaigns) {
 
         
-            // Parse the HTML string into a DOM element
+            // parse the HTML string into a DOM element
             const parser = new DOMParser();
             const doc = parser.parseFromString(cardTemplate, 'text/html');
 
-            // Modify content
+            // modify content
             doc.querySelector('.campaign-card-title h1').textContent = campaign.name;
             doc.querySelector('.campaign-card-title h3').textContent = campaign.continent;
             doc.querySelector('.campaign-card-desc').textContent = campaign.description
-            doc.querySelector('.campaign-card img').setAttribute('img', campaign.image)
+            const imageUrl = '../images/campaigns/' + campaign.image;
+            console.log(imageUrl)
+            doc.querySelector('.campaign-card img').setAttribute('src', imageUrl)
             
 
-            // Extract the modified HTML
+            // extract the modified HTML
             const modifiedTemplate = doc.body.innerHTML;
 
             renderedTemplates = renderedTemplates + modifiedTemplate;
@@ -54,5 +58,5 @@ class CampaignsUtilsClass {
 
 }
 
-//define global classes
+// define global classes
 const CampaignsUtils = new CampaignsUtilsClass()

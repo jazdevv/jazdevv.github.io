@@ -1,14 +1,14 @@
 :root {
     --main-color: #00ff4c;
-    --secundary-color: #17a736;
-    --contrast-color: #16a4bb;
+    --secundary-color: #3dd368;
     --border-hard-color: #e4e4e4;
     --font-medium-size: 0.9rem;
     --font-lg-size: 1.1rem;
     --font-2xl-size: 2rem;
     --font-3xl-size: 3rem;
-    --text-color-white: #e4e4e4;
+    --text-color-white: #ffffff;
     --text-color-black: #1a1a1a;
+    --text-color-grayblue: #323d50;
     --bg-white-color: #e4e4e4;
     --bg-gray-color: #6b6b6b;
     --border-black: #1a1a1a;
@@ -42,6 +42,10 @@ main {
     color: white;
     font-size: var(--font-medium-size);
     font-weight: bold;
+}
+
+.container-main {
+    margin: 0 auto;
 }
 
 /* rehusable clases */
@@ -110,6 +114,23 @@ main {
     color: var(--text-color-black)
 }
 
+.btn-2 {
+    cursor: pointer;
+    padding: 30px 30px;
+    height: 20px;
+    border: 3px var(--secundary-color) solid;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: var(--text-color-grayblue);
+}
+
+.btn-2:hover {
+    background-color: var(--secundary-color);
+    color: var(--text-color-white);
+}
+
 /* rehusable timeline */
 .timeline {
     position: relative;
@@ -170,7 +191,7 @@ main {
 }
 
 .timeline b {
-    color: var(--text-color-black);
+    color: var(--secundary-color);
 }
 
 
@@ -332,6 +353,7 @@ main.home {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    color: var(--text-color-grayblue);
 }
 
 .block-filter>h1 {
@@ -372,4 +394,53 @@ main.home {
 
 .continent-container:hover img {
     transform: scale(1.2);
+}
+
+#campaigns {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+/* campaign card */
+.campaign-card {
+    display: grid;
+    grid-template-columns: 1fr 600px;
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-column-gap: 50px;
+}
+
+.campaign-card h1 {
+    color: var(--text-color-grayblue);
+    max-width: 30vw;
+    width: 30vw;
+}
+
+.campaign-card h3 {
+    color: var(--text-color-grayblue);
+}
+
+.campaign-card img {
+    height: 280px;
+    width: 100%;
+    max-width: 100%;
+    grid-row: 1/4;
+    grid-column: 2/3;
+    object-fit: cover;
+}
+
+.campaign-card-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.campaign-card-desc {
+    max-width: 30vw;
+    width: 30vw;
+}
+
+.campaign-card-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    gap: 20px;
 }

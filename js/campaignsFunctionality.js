@@ -19,3 +19,9 @@ async function filterByContinent(continent) {
     
     return campaignsHtml;
 }
+
+async function initialRenderOfAllCampaigns(){
+    document.querySelector('.continent-container[data-continent="ALL"]').click();
+}
+
+initialRenderOfAllCampaigns()

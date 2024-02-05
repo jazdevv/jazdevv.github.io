@@ -2,18 +2,18 @@
     "campaigns": [
         {
             "id": 1,
-            "name": "Forest Guardians",
+            "name": "Forest Guardians - Australia",
             "continent": "OC",
-            "description": "Tree planting campaign in SA",
-            "image": "image_url_1",
+            "description": "Tree planting campaign in Australia after the forestal fire",
+            "image": "image-1.jpg",
             "stadistics": {
                 "amountPlantedTrees": 906,
                 "personsContributted": 173,
                 "monthsDuration": 8
             },
             "geoCoordinates": [
-                69.3557,
-                14.8341
+                -26.26,
+                148.8341
             ],
             "roadMap": [
                 {
@@ -35,7 +35,7 @@
             "name": "Reforesting the Pyrenees",
             "continent": "EU",
             "description": "Plant native trees in degraded areas of the Pyrenees mountain range.",
-            "image": "https://example.com/pyrenees_reforestation.jpg",
+            "image": "image-2.jpg",
             "stadistics": {
                 "amountPlantedTrees": 5000,
                 "personsContributted": 200,
@@ -65,7 +65,7 @@
             "name": "Clean Coast Catalonia",
             "continent": "EU",
             "description": "Organize beach cleanups and raise awareness about marine pollution.",
-            "image": "https://example.com/clean_coast_catalonia.jpg",
+            "image": "image-3.jpg",
             "stadistics": {
                 "amountPlantedTrees": 0,
                 "personsContributted": 500,
@@ -92,10 +92,10 @@
         },
         {
             "id": 4,
-            "name": "Butterfly Gardens in Schools",
+            "name": "Gardens in Schools",
             "continent": "EU",
-            "description": "Create butterfly gardens in schoolyards to promote biodiversity and education.",
-            "image": "https://example.com/butterfly_gardens_schools.jpg",
+            "description": "Create gardens in schoolyards to promote biodiversity and education to have a green planet.",
+            "image": "image-4.jpg",
             "stadistics": {
                 "amountPlantedTrees": 200,
                 "personsContributted": 150,
@@ -122,10 +122,10 @@
         },
         {
             "id": 5,
-            "name": "Urban Agriculture in Community Gardens",
+            "name": "Urban Agriculture",
             "continent": "SA",
-            "description": "Empower communities to grow fresh produce in unused urban spaces.",
-            "image": "https://example.com/urban_agriculture.jpg",
+            "description": "Empower communities to grow fresh produce in unused urban spaces around their houses.",
+            "image": "image-5.webp",
             "stadistics": {
                 "amountPlantedTrees": 150,
                 "personsContributted": 300,
@@ -155,7 +155,7 @@
             "name": "Mangrove Restoration in Southeast Asia",
             "continent": "AS",
             "description": "Protect coastal ecosystems and communities by restoring mangrove forests.",
-            "image": "https://example.com/mangrove_restoration.jpg",
+            "image": "image-6.jpg",
             "stadistics": {
                 "amountPlantedTrees": 10000,
                 "personsContributted": 400,
@@ -182,10 +182,10 @@
         },
         {
             "id": 7,
-            "name": "Renewable Energy Microgrids in Rural Africa",
+            "name": "Reforest Rural Africa",
             "continent": "AF",
-            "description": "Provide access to clean electricity and empower communities through renewable energy microgrids.",
-            "image": "https://example.com/renewable_energy_africa.jpg",
+            "description": "Reforest zones afected by drought.",
+            "image": "image-7.jpg",
             "stadistics": {
                 "amountPlantedTrees": 0,
                 "personsContributted": 500,
@@ -212,10 +212,10 @@
         },
         {
             "id": 8,
-            "name": "Bee Hives on Urban Roofs",
+            "name": "Bee Hives on Urban Roofs for help plant growing",
             "continent": "EU",
-            "description": "Install and maintain beehives on urban rooftops to promote biodiversity and local honey production.",
-            "image": "https://example.com/beehives_urban_roofs.jpg",
+            "description": "Install and maintain beehives on urban rooftops to promote biodiversity and local honey production, helping nature growth.",
+            "image": "image-8.webp",
             "stadistics": {
                 "amountPlantedTrees": 50,
                 "personsContributted": 100,
@@ -242,10 +242,10 @@
         },
         {
             "id": 9,
-            "name": "Community Composting Initiative",
+            "name": "Reforest ALASKA",
             "continent": "NA",
-            "description": "Reduce waste and create nutrient-rich compost through community composting programs.",
-            "image": "https://example.com/community_composting.jpg",
+            "description": "Refores ALASKA damage produced by gold mine, ensuring that after the mining period finished a growth environment to recover the zone nature is created.",
+            "image": "image-9.jpg",
             "stadistics": {
                 "amountPlantedTrees": 0,
                 "personsContributted": 250,
@@ -272,10 +272,10 @@
         },
         {
             "id": 10,
-            "name": "Healthy Food Access for Children",
+            "name": "Incentive the reforestation after the afforestation",
             "continent": "NA",
-            "description": "Provide fresh, nutritious food to children in underserved communities through school gardens and mobile markets.",
-            "image": "https://example.com/healthy_food_children.jpg",
+            "description": "Incentive the reforestation for zones that have a high afforestation activity, ensure a biodiversity growth.",
+            "image": "image-10.jpg",
             "stadistics": {
                 "amountPlantedTrees": 200,
                 "personsContributted": 300,
@@ -305,7 +305,7 @@
             "name": "Amazon Rainforest Conservation",
             "continent": "SA",
             "description": "Protect the biodiversity and indigenous communities of the Amazon rainforest through sustainable forest management and education.",
-            "image": "https://example.com/amazon_rainforest.jpg",
+            "image": "image-11.jpeg",
             "stadistics": {
                 "amountPlantedTrees": 5000,
                 "personsContributted": 400,
