@@ -26,5 +26,12 @@ async function loadMap() {
     
 }
 
+async function loadNews(){
+    const news = await NewsUtils.getAmountOfNews(3);
+    const renderedNews = await NewsUtils.convertNewsToCard(news);
+    document.getElementById('news-container').innerHTML = renderedNews;    
+}
+
 loadMap()
+loadNews()
 

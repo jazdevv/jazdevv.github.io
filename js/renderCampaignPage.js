@@ -29,8 +29,8 @@ async function renderContent() {
     const campaign = await CampaignsUtils.getCampaign(campaignId)
     
     renderMap(campaign.geoCoordinates)
-    document.querySelector('.campaign-header-block h1').textContent = campaign.name;
-    document.querySelector('.campaign-header-block p').textContent = campaign.description;
+    document.querySelector('.campaign-header-block div h1').textContent = campaign.name;
+    document.querySelector('.campaign-header-block div p').textContent = campaign.description;
     const imageUrl = '../images/campaigns/' + campaign.image;
     document.querySelector('.campaign-header-block img').setAttribute('src', imageUrl);
     document.querySelector('#planted-trees').textContent = campaign.stadistics.amountPlantedTrees;
