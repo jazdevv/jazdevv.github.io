@@ -1,7 +1,6 @@
 async function renderMap(geoCoordinates) {
-    console.log("rendering map", geoCoordinates)
     var map = L.map('map', {
-        center: [51.505, -0.09],
+        center: geoCoordinates,
         zoom: 2,
         minZoom: 2,
         maxZoom: 6,
@@ -30,7 +29,16 @@ async function renderContent() {
     const campaign = await CampaignsUtils.getCampaign(campaignId)
     
     renderMap(campaign.geoCoordinates)
-    console.log(campaign)
+    document.querySelector('.campaign-header-block h1').textContent = campaign.name;
+    document.querySelector('.campaign-header-block p').textContent = campaign.description;
+    const imageUrl = '../images/campaigns/' + campaign.image;
+    document.querySelector('.campaign-header-block img').setAttribute('src', imageUrl);
+    document.querySelector('#planted-trees').textContent = campaign.stadistics.amountPlantedTrees;
+    document.querySelector('#contributors').textContent = campaign.stadistics.personsContributted;
+    document.querySelector('#duration').textContent = campaign.stadistics.monthsDuration;
+
+
+    renderMap(campaign.geoCoordinates)
 }
 
 renderContent();

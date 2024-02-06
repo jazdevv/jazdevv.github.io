@@ -7,7 +7,7 @@
             "description": "Tree planting campaign in Australia after the forestal fire",
             "image": "image-1.jpg",
             "stadistics": {
-                "amountPlantedTrees": 906,
+                "amountPlantedTrees": "906k",
                 "personsContributted": 173,
                 "monthsDuration": 8
             },
