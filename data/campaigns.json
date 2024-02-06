@@ -8,7 +8,7 @@
             "image": "image-1.jpg",
             "stadistics": {
                 "amountPlantedTrees": "906k",
-                "personsContributted": 173,
+                "personsContributted": 500,
                 "monthsDuration": 8
             },
             "geoCoordinates": [
@@ -37,7 +37,7 @@
             "description": "Plant native trees in degraded areas of the Pyrenees mountain range.",
             "image": "image-2.jpg",
             "stadistics": {
-                "amountPlantedTrees": 5000,
+                "amountPlantedTrees": "50k",
                 "personsContributted": 200,
                 "monthsDuration": 18
             },
@@ -62,13 +62,13 @@
         },
         {
             "id": 3,
-            "name": "Clean Coast Catalonia",
+            "name": "Clean Coast Catalonia & Reforestation",
             "continent": "EU",
-            "description": "Organize beach cleanups and raise awareness about marine pollution.",
+            "description": "Organize beach cleanups and raise awareness about marine pollution, planting trees in cleaned zones.",
             "image": "image-3.jpg",
             "stadistics": {
-                "amountPlantedTrees": 0,
-                "personsContributted": 500,
+                "amountPlantedTrees": "20k",
+                "personsContributted": 50,
                 "monthsDuration": 12
             },
             "geoCoordinates": [
@@ -97,7 +97,7 @@
             "description": "Create gardens in schoolyards to promote biodiversity and education to have a green planet.",
             "image": "image-4.jpg",
             "stadistics": {
-                "amountPlantedTrees": 200,
+                "amountPlantedTrees": "906k",
                 "personsContributted": 150,
                 "monthsDuration": 6
             },
@@ -127,8 +127,8 @@
             "description": "Empower communities to grow fresh produce in unused urban spaces around their houses.",
             "image": "image-5.webp",
             "stadistics": {
-                "amountPlantedTrees": 150,
-                "personsContributted": 300,
+                "amountPlantedTrees": "10k",
+                "personsContributted": 30,
                 "monthsDuration": 12
             },
             "geoCoordinates": [
@@ -157,7 +157,7 @@
             "description": "Protect coastal ecosystems and communities by restoring mangrove forests.",
             "image": "image-6.jpg",
             "stadistics": {
-                "amountPlantedTrees": 10000,
+                "amountPlantedTrees": "100k",
                 "personsContributted": 400,
                 "monthsDuration": 24
             },
@@ -187,8 +187,8 @@
             "description": "Reforest zones afected by drought.",
             "image": "image-7.jpg",
             "stadistics": {
-                "amountPlantedTrees": 0,
-                "personsContributted": 500,
+                "amountPlantedTrees": "200k",
+                "personsContributted": 200,
                 "monthsDuration": 18
             },
             "geoCoordinates": [
@@ -214,10 +214,10 @@
             "id": 8,
             "name": "Bee Hives on Urban Roofs for help plant growing",
             "continent": "EU",
-            "description": "Install and maintain beehives on urban rooftops to promote biodiversity and local honey production, helping nature growth.",
+            "description": "Install and maintain beehives on urban rooftops to promote biodiversity and local honey production, helping nature growth, also plant mini trees on the rooftops.",
             "image": "image-8.webp",
             "stadistics": {
-                "amountPlantedTrees": 50,
+                "amountPlantedTrees": "1k",
                 "personsContributted": 100,
                 "monthsDuration": 12
             },
@@ -247,8 +247,8 @@
             "description": "Refores ALASKA damage produced by gold mine, ensuring that after the mining period finished a growth environment to recover the zone nature is created.",
             "image": "image-9.jpg",
             "stadistics": {
-                "amountPlantedTrees": 0,
-                "personsContributted": 250,
+                "amountPlantedTrees": "1m",
+                "personsContributted": 1000,
                 "monthsDuration": 9
             },
             "geoCoordinates": [
@@ -277,8 +277,8 @@
             "description": "Incentive the reforestation for zones that have a high afforestation activity, ensure a biodiversity growth.",
             "image": "image-10.jpg",
             "stadistics": {
-                "amountPlantedTrees": 200,
-                "personsContributted": 300,
+                "amountPlantedTrees": "500k",
+                "personsContributted": 3000,
                 "monthsDuration": 15
             },
             "geoCoordinates": [
@@ -307,8 +307,8 @@
             "description": "Protect the biodiversity and indigenous communities of the Amazon rainforest through sustainable forest management and education.",
             "image": "image-11.jpeg",
             "stadistics": {
-                "amountPlantedTrees": 5000,
-                "personsContributted": 400,
+                "amountPlantedTrees": "400k",
+                "personsContributted": 1000,
                 "monthsDuration": 24
             },
             "geoCoordinates": [

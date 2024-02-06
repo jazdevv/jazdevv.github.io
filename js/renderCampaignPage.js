@@ -34,7 +34,7 @@ async function renderContent() {
     const imageUrl = '../images/campaigns/' + campaign.image;
     document.querySelector('.campaign-header-block img').setAttribute('src', imageUrl);
     document.querySelector('#planted-trees').textContent = campaign.stadistics.amountPlantedTrees;
-    document.querySelector('#contributors').textContent = campaign.stadistics.personsContributted;
+    document.querySelector('#contributors').textContent = campaign.stadistics.personsContributted+"+";
     document.querySelector('#duration').textContent = campaign.stadistics.monthsDuration;
 
 

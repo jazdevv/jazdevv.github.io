@@ -452,7 +452,7 @@ main.home {
     padding: 50px 20%;
 }
 
-.campaign-detail{
+.campaign-detail {
     text-decoration: none;
 }
 
@@ -466,6 +466,7 @@ main.home {
 
 .campaign-header-block h1 {
     font-size: var(--font-2xl-size);
+    font-weight: 500;
 }
 
 .campaign-header-block img {
@@ -503,9 +504,24 @@ main.home {
 
 .map-campaign {
     width: 100%;
-    height: 350px;    
+    height: 350px;
     z-index: 0;
 }
+
+.map-block {
+    border-top: 1px black solid;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.map-block h1 {
+    font-weight: 500;
+    font-size: var(--font-2xl-size);
+}
+
 /* 
 .campaign-page .timeline b {
     color: var(--text-color-grayblue);
@@ -521,5 +537,6 @@ main.home {
 }
 
 .timeline-block h1 {
+    font-size: var(--font-2xl-size);
     font-weight: 500;
 }
