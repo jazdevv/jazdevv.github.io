@@ -53,9 +53,9 @@ class CampaignsUtilsClass {
             doc.querySelector('.campaign-card-title h3').textContent = campaign.continent;
             doc.querySelector('.campaign-card-desc').textContent = campaign.description
             const imageUrl = '../images/campaigns/' + campaign.image;
-            console.log(imageUrl)
-            doc.querySelector('.campaign-card img').setAttribute('src', imageUrl)
-            
+            doc.querySelector('.campaign-card img').setAttribute('src', imageUrl);
+            const detailsUrl = '/campaign.html?id=' + campaign.id;
+            doc.querySelector('.campaign-detail').setAttribute('href',detailsUrl);
 
             // extract the modified HTML
             const modifiedTemplate = doc.body.innerHTML;
