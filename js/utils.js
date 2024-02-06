@@ -8,6 +8,16 @@ class CampaignsUtilsClass {
         return campaignsJson.campaigns;
     }
 
+    async getCampaign(campaignId){
+        const campaigns = await this.getCampaigns()
+        for (let campaign of campaigns){
+            if (campaign.id == campaignId){
+                return campaign
+            }
+        }
+        return undefined;
+    }
+
     async getContinentCampaigns(continent) {
         if (continent == 'ALL') {
             const campaigns = await this.getCampaigns();
