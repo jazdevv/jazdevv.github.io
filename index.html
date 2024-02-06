@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <script src="js/renderNavbar.js" defer></script>
     <script src="js/utils.js" defer></script>
-    <script src="js/homeMap.js" defer></script>
+    <script src="js/renderHomeComponents.js" defer></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 
@@ -24,7 +24,7 @@
         <!--  TEMPLATE RENDER -->
     </nav>
     <main class="home">
-        <article class="home-portada dark-container">
+        <section class="home-portada dark-container">
             <div class="home-portada-content">
                 <h1>A Green World Is a Better World</h1>
             </div>
@@ -36,13 +36,13 @@
                 <!-- <div style="position:relative; width:100%; height:0px; padding-bottom:56.250%"><iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/on2eoa?autoplay=1&muted=1&nocontrols=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div> -->
             </div>
            
-        </article>   
-        <article class="home-map">
-            <h1 class="pre-title">WHERE WE ARE</h1>
-            <h3 class="title">OUR CAMPAIGNS</h3>
+        </section>   
+        <section class="home-map">
+            <h3 class="pre-title">WHERE WE ARE</h3>
+            <h1 class="h1-skinny">OUR CAMPAIGNS</h1>
             <div id="map" class="map-home"></div>
-        </article>
-        <article class="image-banner" id="block-image-banner-home">
+        </section>
+        <section class="image-banner" id="block-image-banner-home">
             <div class="image-banner-content">
                 <h1 class="image-banner-title">
                     Planting Peace, One Tree at a Time
@@ -56,6 +56,12 @@
             </div>
             <div class="image-banner-image dark-container">
                 <img src="images/planting-peace.jpg"/>
+            </div>
+        </section>
+        <article class="home-news">
+            <h1 class="h1-skinny">LATEST NEWS</h1>
+            <div class="news-container" id="news-container">
+           
             </div>
         </article>
     </main>
