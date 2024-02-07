@@ -406,7 +406,7 @@ main.home {
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    color: var(--text-color-grayblue);
+    color: var(--text-color-black);
 }
 
 .block-filter>h1 {
@@ -472,13 +472,13 @@ main.home {
 }
 
 .campaign-card h1 {
-    color: var(--text-color-grayblue);
+    color: var(--text-color-black);
     max-width: 30vw;
     width: 30vw;
 }
 
 .campaign-card h3 {
-    color: var(--text-color-grayblue);
+    color: var(--text-color-black);
 }
 
 .campaign-card img {
@@ -601,6 +601,10 @@ main.home {
     position: relative;
 }
 
+/* roadmap page */
+.roadmap-page .timeline{
+    position: relative;
+}
 
 /* news page */
 .featured-new-block{
