@@ -112,7 +112,7 @@ class NewsUtilsClass {
             doc.querySelector('.new-card p').textContent = newNotice.miniDescription;
             const imageUrl = '../images/news/' + newNotice.image;
             doc.querySelector('.new-card img').setAttribute('src', imageUrl);
-
+            doc.querySelector('.new-card span').textContent = newNotice.date;
 
             // extract the modified HTML
             const modifiedTemplate = doc.body.innerHTML;
