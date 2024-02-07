@@ -14,18 +14,9 @@ async function renderMap(geoCoordinates) {
     L.marker(geoCoordinates).addTo(map);
 }
 
-function getQueryParamId() {
-    const currentURL = window.location.href;
-
-    const url = new URL(currentURL);
-
-    const id = url.searchParams.get("id");
-
-    return id;
-}
 
 async function renderContent() {
-    const campaignId = getQueryParamId();
+    const campaignId = PageUtils.getQueryParamId();
     const campaign = await CampaignsUtils.getCampaign(campaignId)
     
     renderMap(campaign.geoCoordinates)

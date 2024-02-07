@@ -132,6 +132,19 @@ class NewsUtilsClass {
 
 }
 
+class PageUtilsClass {
+    getQueryParamId() {
+        const currentURL = window.location.href;
+    
+        const url = new URL(currentURL);
+    
+        const id = url.searchParams.get("id");
+    
+        return id;
+    }
+}
+
 // define global classes
 const CampaignsUtils = new CampaignsUtilsClass();
 const NewsUtils = new NewsUtilsClass();
+const PageUtils = new PageUtilsClass();
