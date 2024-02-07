@@ -112,9 +112,10 @@ h1 b {
 .btn-1 {
     cursor: pointer;
     padding: 20px 30px;
+    color: var(--text-color-white);
     border: 3px var(--text-color-white) solid;
     transition: 0.3s;
-
+    text-decoration: none;
 }
 
 .btn-1:hover {
