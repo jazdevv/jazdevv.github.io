@@ -638,7 +638,40 @@ main.home {
     padding: 20px 30%;
 }
 
+.new-page-header{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
 .new-page-header div{
     display: flex;
     justify-content: space-between;
 }
+
+.new-page-header div h1{
+    width: 70%;
+}
+
+#share-btn{
+    color: black;
+    font-weight: 500;
+    display: flex;
+    height: 50px;
+    gap: 12px;
+    align-items: center;
+    padding: 5px 25px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    /* background-color: var(--bg-gray-color); */
+    cursor: pointer;
+    white-space: nowrap;
+    border: 1px var(--border-black) solid;
+    transition: 0.3s;
+}
+
+#share-btn:hover {
+    color: var(--text-color-white);
+    background-color: var(--bg-gray-color);
+}
+/* 

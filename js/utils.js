@@ -142,6 +142,12 @@ class PageUtilsClass {
     
         return id;
     }
+
+    getUrl(){
+        const currentURL = window.location.href;
+
+        return currentURL;
+    }
 }
 
 // define global classes
