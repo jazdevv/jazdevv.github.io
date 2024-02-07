@@ -90,7 +90,7 @@ class NewsUtilsClass {
         const news = await this.getNews();
 
         const resultArray = [];
-        for (let i = 0; i <= amount -1; i++) {
+        for (let i = 0; i <= amount - 1; i++) {
             resultArray.push(news[i]);
         }
 
@@ -100,7 +100,7 @@ class NewsUtilsClass {
     async convertNewsToCard(news) {
         const cardTemplate = await (await fetch("../components/templates/newCard.html")).text()
         let renderedTemplates = "";
-        for (let newNotice of news) {   
+        for (let newNotice of news) {
             // parse the HTML string into a DOM element
             const parser = new DOMParser();
             const doc = parser.parseFromString(cardTemplate, 'text/html');
@@ -121,6 +121,13 @@ class NewsUtilsClass {
         }
 
         return renderedTemplates;
+    }
+
+
+    async loadNews(amountNews, idRenderIn) {
+        const news = await this.getAmountOfNews(amountNews);
+        const renderedNews = await this.convertNewsToCard(news);
+        document.getElementById(idRenderIn).innerHTML = renderedNews;
     }
 
 }

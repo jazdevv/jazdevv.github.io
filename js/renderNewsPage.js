@@ -1,0 +1,1 @@
+NewsUtils.loadNews(6,'news-container')

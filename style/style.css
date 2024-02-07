@@ -35,6 +35,12 @@ main {
     gap: 30px;
 }
 
+h1 b {
+    color: var(--secundary-color);
+    font-size: var(--font-2xl-size);
+    white-space: nowrap;
+}
+
 .top-header {
     text-align: center;
     text-transform: uppercase;
@@ -138,6 +144,50 @@ main {
     font-weight: 500;
     font-size: var(--font-2xl-size);
 }
+
+/* rehusable news */
+.news-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-column-gap: 50px;
+    grid-row-gap: 50px; */
+    gap: 50px;
+    padding: 0px 20%;
+}
+
+.new-card {
+    text-decoration: none;
+    /* max-width: 300px; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--text-color-black);
+}
+
+.new-card img {
+    width: 100%;
+    height: 15vw;
+    max-height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.new-card div {
+    width: 100%;
+    height: 15vw;
+    max-height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s;
+    overflow: hidden;
+}
+
+.new-card:hover img {
+    transform: scale(1.1);
+}
+
+.new-card:hover h3{
+    color: var(--text-dark-green)
+};
 
 /* rehusable timeline */
 .timeline {
@@ -405,7 +455,7 @@ main.home {
     gap: 30px;
 }
 
-.home-news{
+.news-block{
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -547,44 +597,32 @@ main.home {
     padding-top: 50px;
 }
 
-/* news */
-.news-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 50px;
-    padding: 0px 20%;
+
+/* news page */
+.featured-new-block{
+    padding: 50px 20%;
 }
 
-.new-card {
-    text-decoration: none;
-    max-width: 300px;
+.featured-new-container{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    border-bottom: 1px var(--border-black) solid;
+    padding: 0px 0px 80px;
+}
+
+.featured-new-container > div {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    color: var(--text-color-black);
+    gap: 20px;
+    width: 85%;
 }
 
-.new-card img {
+.featured-new-container h1{
+    font-size: var(--font-2xl-size);
+}
+
+.featured-new-container img{
     width: 100%;
-    height: 15vw;
-    max-height: 220px;
+    height: 400px;
     object-fit: cover;
-    transition: transform 0.3s;
 }
-
-.new-card div {
-    width: 100%;
-    height: 15vw;
-    max-height: 220px;
-    object-fit: cover;
-    transition: transform 0.3s;
-    overflow: hidden;
-}
-
-.new-card:hover img {
-    transform: scale(1.1);
-}
-
-.new-card:hover h3{
-    color: var(--text-dark-green)
-};
