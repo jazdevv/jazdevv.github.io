@@ -20,21 +20,21 @@
         },
         {
             "id": 3,
-            "title": "Economic Resurgence in Timberlake",
-            "date": "2023-07-18",
-            "miniDescription": "Reforestation sparks economic revival",
-            "author": "Emily Johnson",
-            "description": "Timberlake, a once-struggling community hit by economic hardships, has undergone a remarkable transformation thanks to ambitious reforestation initiatives. The strategic planting of trees has not only rejuvenated the environment but also breathed new life into the local economy.\n\nThe hills surrounding Timberlake, once stripped of their greenery, now flourish with an abundance of trees. These trees have become a sustainable source of timber, fostering a thriving local industry and creating employment opportunities for residents.\n\nThe economic revival extends beyond the timber sector. Tourism has experienced a significant boost, as visitors are drawn to the picturesque landscapes and serene forests. The influx of tourists has invigorated local businesses, from quaint cafes to outdoor adventure companies, injecting vitality into Timberlake's once-dormant commercial scene.\n\nAs Timberlake's economic prospects continue to brighten, residents are filled with renewed hope and optimism for the future. The story of this resilient community serves as an inspiring testament to the power of reforestation in revitalizing both nature and the human spirit.",
-            "image": "news-3.jpeg"
-        },
-        {
-            "id": 4,
             "title": "Greener, Healthier Living in Pineville",
             "date": "2023-08-09",
             "miniDescription": "Reforestation brings wellness to Pineville",
             "author": "Michael Brown",
             "description": "The residents of Pineville are experiencing a remarkable transformation in their quality of life, all thanks to a visionary urban reforestation project. The cityscape, once dominated by concrete and pollution, has now been infused with greenery, leading to improved health and well-being for the community.\n\nThe systematic planting of trees along streets, in parks, and public spaces has brought about a tangible change. Air quality has significantly improved, as trees act as natural air purifiers, removing pollutants and providing a breath of fresh air for residents and visitors alike.\n\nGreen spaces have become popular hubs for recreation and relaxation, offering a welcome respite from the hustle and bustle of city life. Residents now have the opportunity to connect with nature within the city limits, enhancing their mental and physical well-being.\n\nFurthermore, the urban reforestation project has sparked community engagement and environmental awareness. Citizens have actively participated in tree-planting initiatives, fostering a sense of ownership and pride in their city's transformation.\n\nPineville's journey towards a greener and healthier future is a shining example of how urban reforestation can redefine urban living, making cities not only more sustainable but also more livable and enjoyable for everyone.",
             "image": "news-4.jpeg"
+        },
+        {
+            "id": 4,
+            "title": "Economic Resurgence in Timberlake",
+            "date": "2023-07-18",
+            "miniDescription": "Reforestation sparks economic revival",
+            "author": "Emily Johnson",
+            "description": "Timberlake, a once-struggling community hit by economic hardships, has undergone a remarkable transformation thanks to ambitious reforestation initiatives. The strategic planting of trees has not only rejuvenated the environment but also breathed new life into the local economy.\n\nThe hills surrounding Timberlake, once stripped of their greenery, now flourish with an abundance of trees. These trees have become a sustainable source of timber, fostering a thriving local industry and creating employment opportunities for residents.\n\nThe economic revival extends beyond the timber sector. Tourism has experienced a significant boost, as visitors are drawn to the picturesque landscapes and serene forests. The influx of tourists has invigorated local businesses, from quaint cafes to outdoor adventure companies, injecting vitality into Timberlake's once-dormant commercial scene.\n\nAs Timberlake's economic prospects continue to brighten, residents are filled with renewed hope and optimism for the future. The story of this resilient community serves as an inspiring testament to the power of reforestation in revitalizing both nature and the human spirit.",
+            "image": "news-3.jpeg"
         },
         {
             "id": 5,
