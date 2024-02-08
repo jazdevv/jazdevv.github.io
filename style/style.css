@@ -116,6 +116,7 @@ h1 b {
     border: 3px var(--text-color-white) solid;
     transition: 0.3s;
     text-decoration: none;
+    width: fit-content;
 }
 
 .btn-1:hover {
@@ -299,6 +300,17 @@ h1 b {
     position: absolute;
 }
 
+.navbar-signin{
+    cursor: pointer;
+    right: 0px;
+    position: absolute;
+}
+
+.navbar-signin.btn-1 {
+    padding: 10px 20px !important;
+    font-size: var(--font-lg-size) !important;
+}
+
 .navbar-logo img {
     width: 70px;
 }
@@ -334,6 +346,8 @@ main.home {
 .home-portada {
     width: 100%;
     position: relative;
+    /* height: 800px; */
+    overflow: hidden;
 }
 
 .home-portada-content {
@@ -342,10 +356,14 @@ main.home {
     margin-right: auto;
     left: 0;
     right: 0;
-    top: 20%;
+    top: 35%;
     width: fit-content;
     color: var(--text-color-white);
     z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
 }
 
 .home-portada-content h1 {
@@ -356,6 +374,12 @@ main.home {
 
 .home-portada video {
     width: 100%;
+}
+
+.home-portada .buttons-row{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
 }
 
 /* .home-portada .home-portada-video::before{
@@ -679,4 +703,4 @@ main.home {
     color: var(--text-color-white);
     background-color: var(--bg-gray-color);
 }
-/* 
+
