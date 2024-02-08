@@ -16,6 +16,9 @@
     --globalnav-bg-color: #1a1a1a;
     --globalnav-text-color: #e4e4e4;
     --globalnav-background: rgba(22, 22, 23, .8);
+    --globalfooter-text-color: #e4e4e4;
+    --globalfooter-bg: #1a1a1a;
+    --globalfooter-font-size: 0.8rem;
 }
 
 * {
@@ -338,6 +341,23 @@ h1 b {
     width: 100%;
 }
 
+/* footer */
+#footer{
+    display: flex;
+    background-color: var(--globalfooter-bg);
+    color: var(--globalfooter-text-color);
+    font-size: var(--globalfooter-font-size);
+    padding: 10px 5vw;
+    gap: 50px;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+#footer img {
+    width: 70px;
+    height: 70px;
+}
 /* home */
 main.home {
     transform: translateY(-70px);
