@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +10,91 @@
     <link rel="stylesheet" type="text/css" href="./style/style.css">
     <script src="js/renderContent/commonRender.js" defer></script>
 </head>
+
 <body>
     <header class="top-header">IMPROVING THE EARTH!</header>
     <nav class="navbar" id="navbar">
-       <!--  TEMPLATE RENDER -->
+        <!--  TEMPLATE RENDER -->
     </nav>
-    <main>
+    <main class="form-page">
+        <div class="image-forms-container">
+            <img src="images/form-page-img.jpg" />
+        </div>
+        
+        <form>
+            <fieldset class="form-row">
+                <div class="small-input">
+                    <label>Name</label>
+                    <input type="text" required minlength="3" maxlength="20" />
+                </div>
+                <div class="checkbox">
+                    <label>Gender</label>
+                    <div >
+                        <input type="radio" id="contactChoice1" name="contact" value="sr" required>
+                        <label for="contactChoice1">Sr</label>
 
+                        <input type="radio" id="contactChoice2" name="contact" value="sra">
+                        <label for="contactChoice2">Sra</label>
+
+                        <input type="radio" id="contactChoice3" name="contact" value="other">
+                        <label for="contactChoice3">Other</label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="form-row">
+                <div class="small-input">
+                    <label>First Name</label>
+                    <input type="text" required minlength="3" maxlength="20" />
+                </div>
+                <div class="small-input">
+                    <label>Last Name</label>
+                    <input type="text" required minlength="3" maxlength="20" />
+                </div>
+            </fieldset>
+            <fieldset class="form-row">
+                <div class="small-input">
+                    <label>Postal Code</label>
+                    <input type="number" required min="0"/>
+                </div>
+                <div class="small-input">
+                    <label>Phone Number</label>
+                    <input type="number" required min="600000000" max="" placeholder="ex. 600 000 000"/>
+                </div>
+            </fieldset>
+            <div class="checkbox">
+                <label>Which continent do you have interest in?</label>
+                <div>
+                    <input type="checkbox" id="interestAll" name="interests" value="All">
+                    <label for="interestAll">All</label>
+                    <input type="checkbox" id="interestEurope" name="interests" value="Europe">
+                    <label for="interestEurope">Europe</label>
+                    <input type="checkbox" id="interestAfrica" name="interests" value="Africa">
+                    <label for="interestAfrica">Africa</label>
+                    <input type="checkbox" id="interestAsia" name="interests" value="Asia">
+                    <label for="interestAsia">Asia</label>
+                    <input type="checkbox" id="interestNorthAmerica" name="interests" value="North America">
+                    <label for="interestNorthAmerica">North America</label>
+                    <input type="checkbox" id="interestSouthAmerica" name="interests" value="South America">
+                    <label for="interestSouthAmerica">South America</label>
+                    <input type="checkbox" id="interestOceania" name="interests" value="Oceania">
+                    <label for="interestOceania">Oceania</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <label>Suscribete a nuestra newsletter</label>
+                <input type="checkbox" id="suscribeNewsletter" name="suscribeNewsletter">
+            </div>
+            <div class="form-row">
+                <label>Accepta nuestra politica de cookies y privacidad</label>
+                <input type="checkbox" id="privacyPolicy" name="privacyPolicy"  required>
+            </div>
+            <button type="submit" class="btn-2">SIGN IN</button>
+        </form>
+        
     </main>
     <footer class="footer" id="footer">
         <!--  TEMPLATE RENDER -->
     </footer>
 </body>
+
 </html

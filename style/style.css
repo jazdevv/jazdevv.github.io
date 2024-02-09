@@ -36,6 +36,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    min-height: 76vh;
 }
 
 h1 b {
@@ -59,6 +60,8 @@ h1 b {
 }
 
 /* rehusable clases */
+
+
 .dark-container::before {
     content: '';
     position: absolute;
@@ -128,6 +131,15 @@ h1 b {
     color: var(--text-color-black)
 }
 
+button.btn-2{
+    background: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    padding: 25px 30px;
+}
+
 .btn-2 {
     cursor: pointer;
     padding: 30px 30px;
@@ -138,6 +150,7 @@ h1 b {
     align-items: center;
     font-weight: 700;
     color: var(--text-color-grayblue);
+    width: fit-content;
 }
 
 .btn-2:hover {
@@ -149,6 +162,70 @@ h1 b {
     font-weight: 500;
     font-size: var(--font-2xl-size);
 }
+
+/* rehusable form */
+.form-page{
+    padding: 50px 15%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.image-forms-container{
+    position: relative;
+    overflow: hidden;
+    max-height: 50vh;
+}
+
+.image-forms-container > div {
+    height: 100%;
+    width: 100%;
+}
+
+.image-forms-container img{
+    object-fit: cover;
+    height: 100%;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+fieldset {
+    border: none;
+}
+
+input[type="text"],input[type="number"] {
+    padding: 10px;
+}
+
+.small-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 33%;
+}
+
+.medium-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 50%;
+}
+
+.checkbox{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: first baseline;
+}
+
 
 /* rehusable news */
 .news-container{
@@ -648,6 +725,7 @@ main.home {
 
 /* roadmap page */
 .roadmap-page .timeline{
+    padding: 0px 20%;
     position: relative;
 }
 
