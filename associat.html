@@ -28,8 +28,8 @@
             <div class="form-right-side">
                 <fieldset class="form-row">
                     <div class="small-input">
-                        <label>Name</label>
-                        <input type="text" name="name" required minlength="3" maxlength="20" />
+                        <labe for=namel>Name</label>
+                        <input type="text" name="name" id="name" required minlength="3" maxlength="20" />
                     </div>
                     <div class="checkbox">
                         <label>Gender</label>
@@ -47,30 +47,30 @@
                 </fieldset>
                 <fieldset class="form-row">
                     <div class="small-input">
-                        <label>First Name</label>
-                        <input type="text" name="first_name" required minlength="3" maxlength="20" />
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name" id="first_name" required minlength="3" maxlength="20" />
                     </div>
                     <div class="small-input">
-                        <label>Last Name</label>
-                        <input type="text"  name="last_name" required minlength="3" maxlength="20" />
+                        <label for="last_name">Last Name</label>
+                        <input type="text"  name="last_name" id="last_name" required minlength="3" maxlength="20" />
                     </div>
                 </fieldset>
                 <fieldset class="form-row">
                     <div class="small-input">
-                        <label>Postal Code</label>
+                        <label id="postal-code-input">Postal Code</label>
                         <span class="error hide-error" id="error-postalcode">Invalid postal code</span>
                         <input type="number"  name="postal-code" required id="postal-code-input"/>
                     </div>
                     <div class="small-input">
-                        <label>Phone Number</label>
+                        <label id="phone-input">Phone Number</label>
                         <span class="error hide-error" id="error-phone">Invalid phone number</span>
                         <input type="number"  name="phone" id="phone-input" required placeholder="ex. 600 000 000"/>
                     </div>
                 </fieldset>
                 <fieldset class="form-row">
                     <div class="small-input">
-                        <label>Email</label>
-                        <input type="email" name="email" required/>
+                        <label id="email">Email</label>
+                        <input id="email" type="email" name="email" required/>
                     </div>
                 </fieldset>
                 <div class="checkbox">
@@ -95,7 +95,7 @@
             </div>
             <div class="form-bottom">
                 <div class="small-input">
-                    <label>How Many Trees You Want To Donate (2$ x tree)</label>
+                    <label for="donation-quantity">How Many Trees You Want To Donate (2$ x tree)</label>
                     <div class="donation-div">
                         <input type="number" name="donation-quantity" id="donation-quantity"required />
                         <span>trees</span>
@@ -104,7 +104,7 @@
                     <span class="error hide-error" id="error-postalcode">Invalid postal code</span>
                 </div>
                 <div class="small-input">
-                    <label>Donation Plan</label>
+                    <label for="donation-plan">Donation Plan</label>
                     <select id="donation-plan">
                         <option name="donation-plan" value="one-time" required>One-time payment</option>
                         <option name="donation-plan" value="monthly">Monthly</option>
@@ -112,11 +112,11 @@
                     </select>
                 </div>
                 <div class="form-row">
-                    <label>Suscribete a nuestra newsletter</label>
+                    <label for="suscribeNewsletter">Suscribete a nuestra newsletter</label>
                     <input type="checkbox" id="suscribeNewsletter" name="suscribeNewsletter">
                 </div>
                 <div class="form-row">
-                    <label>Accepta nuestra politica de cookies y privacidad</label>
+                    <label for="privacyPolicy">Accepta nuestra politica de cookies y privacidad</label>
                     <input type="checkbox" id="privacyPolicy" name="privacyPolicy"  required>
                 </div>
                 <span class="" id="submit-msg"></span>
