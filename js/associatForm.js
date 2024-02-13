@@ -41,6 +41,15 @@ document.getElementById("phone-input").addEventListener("input", (e)=>{
     }
 });
 
+// ux show amount of dollars equivalent to the amount of donation trees
+document.getElementById("donation-quantity").addEventListener("input", (e)=>{
+    const inputValue = e.target.value;
+    const dollarsPerTree = 2;
+
+    document.getElementById("donation-trees-in-dolars").textContent = `${dollarsPerTree * inputValue} $`
+})
+
+// submit validation
 document.getElementById("form-associat").addEventListener("submit", (e) => {
     e.preventDefault();
     // const formData = new FormData(e.target);
@@ -57,7 +66,7 @@ document.getElementById("form-associat").addEventListener("submit", (e) => {
     }else{
         submitElement.classList.add("succes")
         submitElement.classList.remove("error")
-        submitElement.textContent = "You have correcty created an account!"
+        submitElement.textContent = "You have correcty  become a member!"
     }
 });
 
