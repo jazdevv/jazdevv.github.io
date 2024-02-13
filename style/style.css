@@ -164,6 +164,50 @@ button.btn-2{
 }
 
 /* rehusable form */
+.hide-error {
+    display: none;
+}
+
+input[type="text"]:focus,input[type="number"]:focus,input[type="email"]:focus {
+    border-color: #0a0092;
+    box-shadow:  0  0  10px #0a0092;
+    outline: none;
+}
+
+.correct-answer {
+    border: 2px #00922c solid;
+}
+
+.correct-answer:focus {
+    border-color: #00922c !important;
+    box-shadow:  0  0  10px #00922c !important;
+    outline: none;
+}
+
+.incorrect-answer {
+    border: 2px #920000 solid;
+}
+
+.incorrect-answer:focus {
+    border-color: #920000 !important;
+    box-shadow:  0  0  10px #920000 !important;
+    outline: none;
+}
+
+
+.error {
+    padding: 10px;
+    color: var(--text-color-white);
+    background-color: #920000;
+}
+
+.succes {
+    padding: 10px;
+    color: var(--text-color-white);
+    background-color: #00922c;
+}
+
+
 .form-page{
     padding: 50px 15%;
     display: grid;
@@ -201,7 +245,7 @@ fieldset {
     border: none;
 }
 
-input[type="text"],input[type="number"] {
+input[type="text"],input[type="number"],input[type="email"] {
     padding: 10px;
 }
 

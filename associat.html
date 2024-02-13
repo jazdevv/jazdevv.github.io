@@ -9,6 +9,8 @@
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="./style/style.css">
     <script src="js/renderContent/commonRender.js" defer></script>
+    <script src="js/utils.js" defer></script>
+    <script src="js/associatFormValidation.js" defer></script>
 </head>
 
 <body>
@@ -21,22 +23,22 @@
             <img src="images/form-page-img.jpg" />
         </div>
         
-        <form>
+        <form id="form-associat">
             <fieldset class="form-row">
                 <div class="small-input">
                     <label>Name</label>
-                    <input type="text" required minlength="3" maxlength="20" />
+                    <input type="text" name="name" required minlength="3" maxlength="20" />
                 </div>
                 <div class="checkbox">
                     <label>Gender</label>
                     <div >
-                        <input type="radio" id="contactChoice1" name="contact" value="sr" required>
+                        <input type="radio" id="contactChoice1" name="gender" value="sr" required>
                         <label for="contactChoice1">Sr</label>
 
-                        <input type="radio" id="contactChoice2" name="contact" value="sra">
+                        <input type="radio" id="contactChoice2" name="gender" value="sra">
                         <label for="contactChoice2">Sra</label>
 
-                        <input type="radio" id="contactChoice3" name="contact" value="other">
+                        <input type="radio" id="contactChoice3" name="gender" value="other">
                         <label for="contactChoice3">Other</label>
                     </div>
                 </div>
@@ -44,21 +46,29 @@
             <fieldset class="form-row">
                 <div class="small-input">
                     <label>First Name</label>
-                    <input type="text" required minlength="3" maxlength="20" />
+                    <input type="text" name="first_name" required minlength="3" maxlength="20" />
                 </div>
                 <div class="small-input">
                     <label>Last Name</label>
-                    <input type="text" required minlength="3" maxlength="20" />
+                    <input type="text"  name="last_name" required minlength="3" maxlength="20" />
                 </div>
             </fieldset>
             <fieldset class="form-row">
                 <div class="small-input">
                     <label>Postal Code</label>
-                    <input type="number" required min="0"/>
+                    <span class="error hide-error" id="error-postalcode">Invalid postal code</span>
+                    <input type="number"  name="postal-code" required min="0" id="postal-code-input"/>
                 </div>
                 <div class="small-input">
                     <label>Phone Number</label>
-                    <input type="number" required min="600000000" max="" placeholder="ex. 600 000 000"/>
+                    <span class="error hide-error" id="error-phone">Invalid phone number</span>
+                    <input type="number"  name="phone" id="phone-input" required placeholder="ex. 600 000 000"/>
+                </div>
+            </fieldset>
+            <fieldset class="form-row">
+                <div class="small-input">
+                    <label>Email</label>
+                    <input type="email"  name="email" required/>
                 </div>
             </fieldset>
             <div class="checkbox">
@@ -88,6 +98,7 @@
                 <label>Accepta nuestra politica de cookies y privacidad</label>
                 <input type="checkbox" id="privacyPolicy" name="privacyPolicy"  required>
             </div>
+            <span class="" id="submit-msg"></span>
             <button type="submit" class="btn-2">SIGN IN</button>
         </form>
         
