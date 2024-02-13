@@ -399,7 +399,7 @@ input[type="text"],input[type="number"],input[type="email"] {
 
 /* navbar */
 
-.navbar {
+.header {
     /* border-bottom: 1px var(--border-hard-color) solid; */
     font-size: var(--font-lg-size);
     top: 0;
@@ -410,7 +410,7 @@ input[type="text"],input[type="number"],input[type="email"] {
     padding: 20px 20vw;
 }
 
-.navbar-wrapper {
+.header-wrapper {
     display: flex;
     align-items: center;
     position: relative;

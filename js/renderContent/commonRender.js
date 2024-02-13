@@ -7,14 +7,14 @@ function renderFooter (){
             .catch(error => console.error('Error:', error));
 }
 
-function renderNavbar(){
-    fetch('../components/navbar.html')
+function renderHeader(){
+    fetch('../components/header.html')
         .then(response => response.text())
         .then(html => {
-            document.getElementById('navbar').innerHTML = html;
+            document.getElementById('header').innerHTML = html;
         })
         .catch(error => console.error('Error:', error));
 }
 
 renderFooter()
-renderNavbar()
+renderHeader()
