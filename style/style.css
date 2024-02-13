@@ -633,7 +633,7 @@ main.home {
     transform: scale(1.2);
 }
 
-#campaigns {
+.campaigns {
     display: flex;
     flex-direction: column;
     gap: 30px;
